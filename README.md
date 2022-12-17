@@ -205,6 +205,22 @@ Also server was able to execute a specfic method on all clients, which shows the
 
 This exercise shows that Client can execute methods on a Server with parameters. 
 
+# Exercise Homework
+Create simple Chat application.
+You should be able to run two Client applications in parallel to talk between themselves
+
+1. Create new Console Client and WebAPI projects
+2. Add new ChatHub
+3. Add new method which gets parameters Username, Message and sends this information to all Clients (Executes a method ShowMessage on Client)
+3. In Client project configure the connection and define hubConnection.On<> to show incoming messages. It should show the message and the name of the User which send it.
+> NOTE: On<T1, T2, T3...> each T defines a type of the consequent parameters. Which means that method which shall be executed On should be defined to receive the same parameters. 
+4. Setup reading from Console in Client in order to send message to other users using the available ChatHub
+
+> NOTE: Username which is used during the communication should be defined from input in the Console.
+> Methods in Console.* can be used for reading and writing to Console. 
+
+<b>Create your own repository on GitHub e.g. SmartStart.SignalR.Homework and provide your code.</b>
+
 
 <br/>
 
