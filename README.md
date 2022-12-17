@@ -181,5 +181,37 @@ It also shows how to configure logging for HubConnection on Client side.
 Also server was able to execute a specfic method on all clients, which shows the continuous connection between Server and Clients.
 
 
+<br/>
+
+## Exercise 3 - Invoke method on a server with parameters
+
+### Server
+1. Define new NotificationsHub
+2. Define new method which sends notifications to all clients, method should get as a parameter a message
+3. Register Hub in Program.cs
 
 
+
+<br/>
+
+### Client
+1. Change Client to connect to newly created Hub
+2. Add possibility to read text from Console in a Client and use the text to execute previously defined Notifications method on a Server
+> NOTE: You can use methods from Console class like Console.ReadLine() for reading things from Console. 
+> You can also use loops in order to continously ask user for input and execute the method on a server.
+<br/>
+
+### Summary
+
+This exercise shows that Client can execute methods on a Server with parameters. 
+
+
+<br/>
+
+# Resources
+- Learning C#
+  - https://dotnet.microsoft.com/en-us/learn/csharp
+- SignalR
+  - https://learn.microsoft.com/en-us/aspnet/core/signalr/introduction
+  - https://github.com/SignalR/SignalR
+  - https://github.com/dotnet/aspnetcore/tree/main/src/SignalR
